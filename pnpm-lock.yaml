@@ -18,6 +18,12 @@ importers:
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3))
+      oxlint:
+        specifier: ^1.1.0
+        version: 1.1.0
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
@@ -199,6 +205,46 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
+
+  '@oxlint/darwin-arm64@1.1.0':
+    resolution: {integrity: sha512-sSnR3SOxIU/QfaqXrcQ0UVUkzJO0bcInQ7dMhHa102gVAgWjp1fBeMVCM0adEY0UNmEXrRkgD/rQtQgn9YAU+w==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@oxlint/darwin-x64@1.1.0':
+    resolution: {integrity: sha512-Jvd3fHnzY2OYbmsg9NSGPoBkGViDGHSFnBKyJQ9LOIw7lxAyQBG2Quxc3GYPFR/f9OYho9C3p4+dIaAJfKhnsw==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@oxlint/linux-arm64-gnu@1.1.0':
+    resolution: {integrity: sha512-MgW4iskOdXuoR+wDXIJUfbdnTg2eo2FnQRaD6ZqhnDTDa7LnV+06rp/Cg3aGj2X9jSEcKDv/bMbYQuot7WRs6Q==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@oxlint/linux-arm64-musl@1.1.0':
+    resolution: {integrity: sha512-a+pkEKmDRdrW+y0gtZ/m68ElVW2VZgATGbMxDgDYFpdiMx9Y0pUPwTMZ2EX/17Aslop4c1BiDSFDK7aEBxKR2g==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@oxlint/linux-x64-gnu@1.1.0':
+    resolution: {integrity: sha512-wNBsXCKVZMvUTcFitrV1wTsdhUAv8l+XQxHxciZ2SO6dpNnWEb2YCxSAIOXeyzBLdO4pIODYcSy38CvGue7TwA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oxlint/linux-x64-musl@1.1.0':
+    resolution: {integrity: sha512-pZD0lt6A5j2Wp70fgIYk4GoPfKTZ8mHWamWIpKFT7aSkFkiOi6nhLWDFvMEIHWRTK3LgkWUNcnWPp4brvin4wQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oxlint/win32-arm64@1.1.0':
+    resolution: {integrity: sha512-rT6uXQvE80+B+L04HJf30uF26426FPI9i9DAY2AxBUhrpNwhqkDEhQdd9ilFWVC7SSbpHgAs50lo+ImSAAkHPQ==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@oxlint/win32-x64@1.1.0':
+    resolution: {integrity: sha512-x6r5yvM3wEty93Bx0NuNK+kutUyS/K55itkUrxdExoK6GcmVDboGGuhju9HyU2cM/IWLEWO8RHcXSyaxr9GR5g==}
+    cpu: [x64]
+    os: [win32]
 
   '@rollup/rollup-android-arm-eabi@4.43.0':
     resolution: {integrity: sha512-Krjy9awJl6rKbruhQDgivNbD1WuLb8xAclM4IR4cN5pHGAs2oIMMQJEiC3IC/9TZJ+QZkmZhlMO/6MBGxPidpw==}
@@ -429,6 +475,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  oxlint@1.1.0:
+    resolution: {integrity: sha512-OVNpaoaQCUHHhCv5sYMPJ7Ts5k7ziw0QteH1gBSwF3elf/8GAew2Uh/0S7HsU1iGtjhlFy80+A8nwIb3Tq6m1w==}
+    engines: {node: '>=8.*'}
+    hasBin: true
+
   path-browserify@1.0.1:
     resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
 
@@ -442,6 +493,11 @@ packages:
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
+
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   rollup@4.43.0:
     resolution: {integrity: sha512-wdN2Kd3Twh8MAEOEJZsuxuLKCsBEo4PVNLK6tQWAn10VhsVewQLzcucMgLolRlhFybGxfclbPeEYBaP6RvUFGg==}
@@ -609,6 +665,30 @@ snapshots:
     optional: true
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
+
+  '@oxlint/darwin-arm64@1.1.0':
+    optional: true
+
+  '@oxlint/darwin-x64@1.1.0':
+    optional: true
+
+  '@oxlint/linux-arm64-gnu@1.1.0':
+    optional: true
+
+  '@oxlint/linux-arm64-musl@1.1.0':
+    optional: true
+
+  '@oxlint/linux-x64-gnu@1.1.0':
+    optional: true
+
+  '@oxlint/linux-x64-musl@1.1.0':
+    optional: true
+
+  '@oxlint/win32-arm64@1.1.0':
+    optional: true
+
+  '@oxlint/win32-x64@1.1.0':
+    optional: true
 
   '@rollup/rollup-android-arm-eabi@4.43.0':
     optional: true
@@ -831,6 +911,17 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  oxlint@1.1.0:
+    optionalDependencies:
+      '@oxlint/darwin-arm64': 1.1.0
+      '@oxlint/darwin-x64': 1.1.0
+      '@oxlint/linux-arm64-gnu': 1.1.0
+      '@oxlint/linux-arm64-musl': 1.1.0
+      '@oxlint/linux-x64-gnu': 1.1.0
+      '@oxlint/linux-x64-musl': 1.1.0
+      '@oxlint/win32-arm64': 1.1.0
+      '@oxlint/win32-x64': 1.1.0
+
   path-browserify@1.0.1: {}
 
   picocolors@1.1.1: {}
@@ -842,6 +933,8 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  prettier@3.5.3: {}
 
   rollup@4.43.0:
     dependencies:
