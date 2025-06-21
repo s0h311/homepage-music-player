@@ -1,4 +1,10 @@
 @import 'tailwindcss';
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark,
+    emerald;
+}
 
 html {
   color-scheme: light dark;

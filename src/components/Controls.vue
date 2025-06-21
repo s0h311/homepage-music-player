@@ -1,25 +1,37 @@
 <template>
-  <div class="flex items-center gap-10">
+  <div class="flex items-center justify-center gap-10">
     <button @click="$emit('previous')">
-      <PreviousIcon lg />
+      <PreviousIcon
+        lg
+        fill-color="fill-primary"
+      />
     </button>
 
     <button
       v-if="playing"
       @click="pause"
     >
-      <PauseIcon xl />
+      <PauseIcon
+        xl
+        fill-color="fill-primary"
+      />
     </button>
 
     <button
       v-else
       @click="resume"
     >
-      <ResumeIcon xl />
+      <ResumeIcon
+        xl
+        fill-color="fill-primary"
+      />
     </button>
 
     <button @click="$emit('next')">
-      <NextIcon lg />
+      <NextIcon
+        lg
+        fill-color="fill-primary"
+      />
     </button>
   </div>
 </template>
