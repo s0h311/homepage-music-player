@@ -1,5 +1,5 @@
 <template>
-  <main class="max-w-md mx-auto py-5 max-h-screen h-screen">
+  <main class="max-w-md mx-auto py-5 max-h-[100dvh] h-[100dvh]">
     <MusicPlayer />
   </main>
 </template>
