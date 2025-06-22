@@ -1,8 +1,8 @@
 import GithubIcon from './icons/GithubIcon.vue'
 import LinkedInIcon from './icons/LinkedInIcon.vue'
-import type { Content, SocialLink } from './types'
+import type { TextContent, Content, SocialLink, SongContent } from './types'
 
-export const contentData: Content[] = [
+const textContentData: TextContent[] = [
   {
     title: 'Who I Am',
     text: `My name is Soheil. I'm a Full Stack Engineer from Germany's most delightful city, Hamburg`,
@@ -39,7 +39,7 @@ export const contentData: Content[] = [
   },
 ]
 
-export const socialLinkData: SocialLink[] = [
+export const socialLinksData: SocialLink[] = [
   {
     title: 'Github',
     url: 'https://github.com/s0h311',
@@ -51,3 +51,20 @@ export const socialLinkData: SocialLink[] = [
     icon: LinkedInIcon,
   },
 ]
+
+const songsData: SongContent[] = [
+  {
+    title: 'Champagne Supernova',
+    trackId: '291233511',
+  },
+  {
+    title: 'Heart-Shaped Box',
+    trackId: '258954379',
+  },
+  {
+    title: 'Everlong',
+    trackId: '150438358',
+  },
+]
+
+export const contentData: Content[] = [...textContentData, ...songsData]

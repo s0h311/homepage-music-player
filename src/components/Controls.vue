@@ -50,7 +50,7 @@
     resume: [void]
   }>()
 
-  const playing = ref<boolean>(true)
+  const playing = ref<boolean>(false)
 
   function pause(): void {
     playing.value = false

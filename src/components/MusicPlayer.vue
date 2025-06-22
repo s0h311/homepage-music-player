@@ -1,9 +1,15 @@
 <template>
   <div class="flex flex-col rounded-xl shadow-md p-5 h-full gap-5">
-    <Cover
-      v-if="currentContent"
+    <TextCover
+      v-if="currentContent && 'text' in currentContent"
       class="overflow-scroll h-full"
       :content="currentContent.text"
+    />
+
+    <SongCover
+      v-if="currentContent && 'trackId' in currentContent"
+      class="overflow-scroll h-full"
+      :trackId="currentContent.trackId"
     />
 
     <div class="mt-auto grid gap-5">
@@ -34,12 +40,13 @@
 
 <script setup lang="ts">
   import { computed, ref } from 'vue'
-  import Cover from './Cover.vue'
+  import TextCover from './TextCover.vue'
   import Progress from './Progress.vue'
   import Controls from './Controls.vue'
   import type { Content, SocialLink } from './types'
-  import { contentData, socialLinkData } from './data'
+  import { contentData, socialLinksData } from './data'
   import ShareBar from './ShareBar.vue'
+  import SongCover from './SongCover.vue'
 
   const currentContentIndex = ref<number>(0)
 
@@ -53,7 +60,7 @@
 
   const contents = ref<Content[]>(contentData)
 
-  const socialLinks = ref<SocialLink[]>(socialLinkData)
+  const socialLinks = ref<SocialLink[]>(socialLinksData)
 
   function previous(): void {
     if (currentContentIndex.value === 0) {
