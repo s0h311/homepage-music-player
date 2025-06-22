@@ -2,7 +2,7 @@
   <progress
     class="progress progress-accent w-56"
     :max
-    :value
+    :value="value + 1"
   />
 </template>
 
