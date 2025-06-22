@@ -7,6 +7,8 @@
     />
 
     <div class="mt-auto grid gap-5">
+      <ShareBar :links="socialLinks" />
+
       <h2
         v-if="currentContent"
         class="font-bold text-lg"
@@ -35,8 +37,9 @@
   import Cover from './Cover.vue'
   import Progress from './Progress.vue'
   import Controls from './Controls.vue'
-  import type { Content } from './types'
-  import { contentData } from './data'
+  import type { Content, SocialLink } from './types'
+  import { contentData, socialLinkData } from './data'
+  import ShareBar from './ShareBar.vue'
 
   const currentContentIndex = ref<number>(0)
 
@@ -49,6 +52,8 @@
   })
 
   const contents = ref<Content[]>(contentData)
+
+  const socialLinks = ref<SocialLink[]>(socialLinkData)
 
   function previous(): void {
     if (currentContentIndex.value === 0) {

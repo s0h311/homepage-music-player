@@ -1,4 +1,6 @@
-import type { Content } from './types'
+import GithubIcon from './icons/GithubIcon.vue'
+import LinkedInIcon from './icons/LinkedInIcon.vue'
+import type { Content, SocialLink } from './types'
 
 export const contentData: Content[] = [
   {
@@ -34,5 +36,18 @@ export const contentData: Content[] = [
     Gave a web development workshop for students of my uni.<br/><br/>
     Built a basic web server in Go.<br/><br/>
     And more...`,
+  },
+]
+
+export const socialLinkData: SocialLink[] = [
+  {
+    title: 'Github',
+    url: 'https://github.com/s0h311',
+    icon: GithubIcon,
+  },
+  {
+    title: 'LinkedIn',
+    url: 'https://linkedin.com/in/soheiln',
+    icon: LinkedInIcon,
   },
 ]
