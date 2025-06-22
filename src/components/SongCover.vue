@@ -8,27 +8,6 @@
       allow="autoplay"
       :src
     ></iframe>
-    <div
-      style="
-        font-size: 10px;
-        color: #cccccc;
-        line-break: anywhere;
-        word-break: normal;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        font-family:
-          Interstate,
-          Lucida Grande,
-          Lucida Sans Unicode,
-          Lucida Sans,
-          Garuda,
-          Verdana,
-          Tahoma,
-          sans-serif;
-        font-weight: 100;
-      "
-    ></div>
   </div>
 </template>
 

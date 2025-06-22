@@ -80,7 +80,11 @@
     currentContentIndex.value++
   }
 
-  function pause(): void {}
+  function pause(): void {
+    alert("Doesn't work yet")
+  }
 
-  function resume(): void {}
+  function resume(): void {
+    alert("Doesn't work yet")
+  }
 </script>

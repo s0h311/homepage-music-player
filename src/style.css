@@ -13,3 +13,11 @@ html {
 button {
   @apply cursor-pointer;
 }
+
+a {
+  @apply text-secondary;
+}
+
+mark {
+  @apply bg-accent px-1;
+}

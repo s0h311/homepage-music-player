@@ -5,19 +5,22 @@ import type { TextContent, Content, SocialLink, SongContent } from './types'
 const textContentData: TextContent[] = [
   {
     title: 'Who I Am',
-    text: `My name is Soheil. I'm a Full Stack Engineer from Germany's most delightful city, Hamburg`,
+    text: `My name is Soheil, and I'm a Software Engineer based in Hamburg, Germany’s most delightful city.`,
   },
   {
     title: 'Who I Am Part II',
-    text: `I enjoy reading books. Some of my favourites are Harari's Sapiens and Homo Deus and Goethe's Faust. I also like traveling, running, playing the guitar and swimming. I'm currently interested in robust software architecture design in web applications and frontend tooling.`,
+    text: `I enjoy reading books.
+    Some of my favourites are <i>Harari's</i> <mark>Sapiens</mark> and <mark>Homo Deus</mark> and
+    <i>Hawking's</i> <mark>Brief Answers to Big Questions</mark>. I also like traveling, running, rock music, playing the guitar and swimming.
+    Interested in robust software architecture design and frontend tooling.`,
   },
   {
     title: 'What I Do',
-    text: `Full Stack Engineer at CHECK24 in Hamburg. Working with smart and passionate people.`,
+    text: `Software Engineer at <a href="https://check24.de" target="_blank">CHECK24</a> in Hamburg. Working with smart and passionate people.`,
   },
   {
     title: 'What I Do Part II',
-    text: `I help organizing community events from time to time. Last one was DevFest Hamburg 2024. I've also previously built a GDSC at my university with the help of a great team. `,
+    text: `I help organizing community events from time to time. Last one was <a href="https://hamburg.devfest.de" target="_blank">DevFest Hamburg</a> 2024.`,
   },
   {
     title: 'What I Do Part III',
@@ -25,16 +28,14 @@ const textContentData: TextContent[] = [
   },
   {
     title: 'Experimenting With Things',
-    text: `Currently building an auto scaler in Go.<br/><br/>
-    Built a zero dependency state management library in JavaScript.<br/><br/>
-    Building extensions to make Redux, NgRx, Pinia and co. safer to work with.<br/><br/>
-    Built a Nuxt.js SaaS boilerplate with Auth, DB, Payment etc.<br/><br/>
-    Built a Feedback collecting app that uses AI to create TODOs from the feedbacks.<br/><br/>
-    For book lovers: a reminder app.<br/><br/>
-    Landing page for my favorite café.<br/><br/>
-    A simple landing page for a construction company.<br/><br/>
-    Gave a web development workshop for students of my uni.<br/><br/>
-    Built a basic web server in Go.<br/><br/>
+    text: `Built a zero dependency <a href="https://github.com/s0h311/yugen" target="_blank">state management library</a> in JavaScript.<br/><br/>
+    Built <a href="https://github.com/s0h311/strict-transitions" target="_blank">extensions</a> to make Redux, NgRx, Pinia and co. safer to work with.<br/><br/>
+    Built a Nuxt.js SaaS <a href="https://github.com/s0h311/nuxt-one" target="_blank">boilerplate</a> with Auth, DB, Payment etc.<br/><br/>
+    Built a <a href="https://github.com/s0h311/feed-monky" target="_blank">Feedback collecting app</a> that uses AI to create TODOs from the feedbacks.<br/><br/>
+    For book lovers: a <a href="https://github.com/s0h311/remind5" target="_blank">reminder app</a>.<br/><br/>
+    <a href="https://roostercafe.de" target="_blank">Landing page</a> for my favorite café.<br/><br/>
+    Gave a <a href="https://github.com/s0h311/workshops" target="_blank">web development workshop</a> for students of my uni.<br/><br/>
+    Built a basic <a href="https://github.com/s0h311/go-webserver" target="_blank">web server</a> in Go.<br/><br/>
     And more...`,
   },
 ]
