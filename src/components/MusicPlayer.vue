@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col rounded-xl shadow-md p-5 h-full gap-5">
+  <div class="flex flex-col md:rounded-xl shadow-md p-5 h-full gap-5">
     <TextCover
       v-if="currentContent && 'text' in currentContent"
       class="overflow-scroll h-full"
@@ -9,7 +9,7 @@
     <SongCover
       v-if="currentContent && 'trackId' in currentContent"
       class="overflow-scroll h-full"
-      :trackId="currentContent.trackId"
+      :trackId="currentContent.youtubeEmbedUrl"
     />
 
     <div class="mt-auto grid gap-5">
