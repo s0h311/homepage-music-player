@@ -9,7 +9,7 @@
     <SongCover
       v-if="currentContent && 'trackId' in currentContent"
       class="overflow-scroll h-full"
-      :trackId="currentContent.youtubeEmbedUrl"
+      :trackId="currentContent.trackId"
     />
 
     <div class="mt-auto grid gap-5">
