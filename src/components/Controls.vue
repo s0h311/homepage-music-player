@@ -1,38 +1,46 @@
 <template>
   <div class="flex items-center justify-center gap-10">
-    <button @click="$emit('previous')">
+    <motion.button
+      :whilePress="{ scale: 0.9 }"
+      @click="$emit('previous')"
+    >
       <PreviousIcon
         lg
         fill-color="fill-primary"
       />
-    </button>
+    </motion.button>
 
-    <button
+    <motion.button
       v-if="playing"
+      :whilePress="{ scale: 0.9 }"
       @click="pause"
     >
       <PauseIcon
         xl
         fill-color="fill-primary"
       />
-    </button>
+    </motion.button>
 
-    <button
+    <motion.button
       v-else
+      :whilePress="{ scale: 0.9 }"
       @click="resume"
     >
       <ResumeIcon
         xl
         fill-color="fill-primary"
       />
-    </button>
+    </motion.button>
 
-    <button @click="$emit('next')">
+    <motion.button
+      :whilePress="{ scale: 0.9 }"
+      @click="$emit('next')"
+    >
       <NextIcon
         lg
         fill-color="fill-primary"
       />
-    </button>
+    </motion.button>
   </div>
 </template>
 
@@ -42,6 +50,7 @@
   import PauseIcon from './icons/PauseIcon.vue'
   import PreviousIcon from './icons/PreviousIcon.vue'
   import ResumeIcon from './icons/ResumeIcon.vue'
+  import { motion } from 'motion-v'
 
   const emits = defineEmits<{
     previous: [void]
