@@ -5,7 +5,7 @@ import type { TextContent, Content, SocialLink, SongContent } from './types'
 const textContentData: TextContent[] = [
   {
     title: 'Who I Am',
-    text: `My name is Soheil, and I'm a Software Engineer based in Hamburg, Germany’s most delightful city.`,
+    text: `My name is Soheil, and I'm a Software Engineer based in Hamburg`,
   },
   {
     title: 'Who I Am Part II',
@@ -28,7 +28,8 @@ const textContentData: TextContent[] = [
   },
   {
     title: 'Experimenting With Things',
-    text: `Built a zero dependency <a href="https://github.com/s0h311/yugen" target="_blank">state management library</a> in JavaScript.<br/><br/>
+    text: `Currently building <a href="https://github.com/s0h311/rereact" target="_blank">meta framework</a> for React.<br/><br/>
+		Built a zero dependency <a href="https://github.com/s0h311/yugen" target="_blank">state management library</a> in JavaScript.<br/><br/>
     Built <a href="https://github.com/s0h311/strict-transitions" target="_blank">extensions</a> to make Redux, NgRx, Pinia and co. safer to work with.<br/><br/>
     Built a Nuxt.js SaaS <a href="https://github.com/s0h311/nuxt-one" target="_blank">boilerplate</a> with Auth, DB, Payment etc.<br/><br/>
     Built a <a href="https://github.com/s0h311/feed-monky" target="_blank">Feedback collecting app</a> that uses AI to create TODOs from the feedbacks.<br/><br/>
